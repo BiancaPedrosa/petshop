@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+Icon\r
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Coverage / build
+coverage/
+dist/
+build/
+
+# Misc
+*.tgz
+.sass-cache

@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<form action="/agendar" method="POST">
+    <label>Selecione o Serviço:</label>
+    <select name="servicoId" required>
+        <% servicos.forEach(s => { %>
+            <option value="<%= s.id %>"><%= s.descricao %> - R$ <%= s.preco %></option>
+        <% }) %>
+    </select>
+    
+    <label>Nome do Pet:</label>
+    <input type="text" name="nomePet" required>
+    
+    <label>Data:</label>
+    <input type="datetime-local" id="data" name="data">
+    <button type="submit">Agendar</button>
+</form>

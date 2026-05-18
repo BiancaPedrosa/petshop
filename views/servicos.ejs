@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+<main style="text-align: center;"> <h1>Nossos Serviços</h1>
+
+    <form action="/servicos" method="GET" style="margin-bottom: 20px;">
+        <input type="text" name="busca" placeholder="Buscar serviço...">
+        <input type="number" name="precoMax" placeholder="Preço máximo">
+        <button type="submit">Filtrar</button>
+        <a href="/servicos">Limpar</a>
+    </form>
+
+    <div class="lista-servicos">
+        <% if (servicos.length > 0) { %>
+            <% servicos.forEach(servico => { %>
+                <div class="card">
+                    <h3><%= servico.descricao %></h3>
+                    <p>Duração: <%= servico.duracao %></p>
+                    <p>Preço: R$ <%= servico.preco.toFixed(2) %></p>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>Nenhum serviço encontrado para esta busca.</p>
+        <% } %>
+    </div>
+</main>

@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<main style="text-align: center;">
+    <h1>Confirmação de Agendamento</h1>
+    
+    <div style="display: inline-block; text-align: left; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+        <p><strong>Nome do Pet:</strong> <%= agendamento.nomePet %></p>
+        <p><strong>Nome do Dono:</strong> <%= agendamento.nomeDono %></p>
+        <p><strong>Serviço Selecionado (ID):</strong> <%= agendamento.servicoId %></p>
+        <p><strong>Data:</strong> <%= agendamento.data %></p>
+        
+        <hr>
+        <p>Os dados acima estão corretos?</p>
+        
+        <div style="display: flex; gap: 10px; justify-content: center;">
+            <form action="/" method="GET">
+                <button type="submit" style="background-color: green; color: white;">Confirmar Reserva</button>
+            </form>
+            
+            <a href="/agendamento">
+                <button style="background-color: red; color: white;">Corrigir Dados</button>
+            </a>
+        </div>
+    </div>
+</main>
+
+<%- include('partials/footer') %>

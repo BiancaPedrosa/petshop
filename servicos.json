@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "descricao": "Banho e Tosa Completa",
+    "duracao": "02:30",
+    "preco": 120.0
+  },
+  {
+    "id": 2,
+    "descricao": "Hidratação de Pelagem",
+    "duracao": "00:45",
+    "preco": 45.0
+  },
+  { "id": 3, "descricao": "Corte de Unhas", "duracao": "00:20", "preco": 30.0 }
+]
