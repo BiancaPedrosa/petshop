@@ -34,7 +34,7 @@ app.get('/servicos', (req, res) => {
 
 // Rota de Agendamento
 app.get('/agendamento', (req, res) => {
-    res.render('agendamento', { servicos }); // Passa serviços para o <select> [cite: 65]
+    res.render('agendamento', { servicos }); // Passa serviços para o <select>
 });
 
 // Rota POST de Confirmação 
