@@ -1,5 +1,7 @@
 # Petshop
 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Aplicação simples de agendamento de serviços (Express + EJS).
 
 Como rodar:
@@ -16,6 +18,6 @@ npm install
 node app.js
 ```
 
-O repositório será publicado em GitHub em seguida (se solicitado).
+O repositório foi publicado no GitHub.
 
-Licença: sem especificação.
+**Licença:** MIT — veja [LICENSE](LICENSE)
